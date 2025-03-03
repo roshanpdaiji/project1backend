@@ -332,7 +332,6 @@ const cancelAppointment = async (req, res) => {
   };
 
 
-
   
 
   const razorpayInstance = new razorpay({

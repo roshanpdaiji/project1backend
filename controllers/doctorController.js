@@ -21,7 +21,7 @@ const changeAvailability = async(req,res)=>{
 
 const doctorList = async(req,res)=>{
     try {
-        const doctors = await doctorModel.find({}).select(['-passowrd','-email'])
+        const doctors = await doctorModel.find({}).select(['-password','-email'])
 
         res.json({success:true,doctors})
 
@@ -116,7 +116,6 @@ const appointmentCancel = async (req, res) => {
         res.status(500).json({ success: false, message: "Internal server error" });
     }
 };
-
 
 
 //API to get dashboard data for doctor panel

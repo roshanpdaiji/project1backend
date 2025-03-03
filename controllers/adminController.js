@@ -93,7 +93,6 @@ const addDoctor = async (req, res) => {
 
 
 
-
 //API for admin login
 
 
@@ -124,7 +123,7 @@ const allDoctors = async(req,res)=>{
         res.json({success:true,doctors})
     } catch (error) {
         console.log(error)
-        res.json({success:true,message:error.message})
+        res.json({success:false,message:error.message})
         
     }
 }
